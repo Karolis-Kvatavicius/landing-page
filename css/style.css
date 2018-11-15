@@ -1,0 +1,228 @@
+body,
+html {
+  color: white;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Niramit', sans-serif, 'Open Sans', sans-serif;
+}
+
+body header #title,
+html header #title {
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 40px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 40px 40px rgba(0, 0, 0, 0.4);
+}
+
+body header #title h1,
+html header #title h1 {
+  text-align: center;
+}
+
+body header #title #address,
+html header #title #address {
+  text-align: center;
+}
+
+body header #title #address span,
+html header #title #address span {
+  padding: 0px 5px 0px 5px;
+  border-right: 2px solid white;
+}
+
+body header #title #address span:nth-last-of-type(1),
+html header #title #address span:nth-last-of-type(1) {
+  border: none;
+}
+
+body header .navbar,
+html header .navbar {
+  margin: 20px 0 20px 0;
+}
+
+body header .navbar #navbarNav,
+html header .navbar #navbarNav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .navbar #navbarNav .nav-item,
+html header .navbar #navbarNav .nav-item {
+  padding: 0px 10px 0px 10px;
+}
+
+body #carousel,
+html #carousel {
+  background: white;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+body #carousel .carousel-item,
+html #carousel .carousel-item {
+  padding: 15px 0 15px 0;
+}
+
+body #carousel .carousel-item img,
+html #carousel .carousel-item img {
+  height: 500px;
+}
+
+body #carousel h2,
+body #carousel p,
+html #carousel h2,
+html #carousel p {
+  text-align: center;
+}
+
+body #carousel h2,
+html #carousel h2 {
+  color: #333333;
+}
+
+body #carousel p:nth-last-child(1),
+html #carousel p:nth-last-child(1) {
+  padding: 15px 0 15px 0;
+}
+
+body #carousel #after::before,
+html #carousel #after::before {
+  width: 15%;
+  display: block;
+  content: "";
+  border-top: 1px solid grey;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  margin: 0 0 0 42.5%;
+}
+
+body #carousel span,
+html #carousel span {
+  font-weight: 600;
+}
+
+body .content,
+html .content {
+  background-color: white;
+  color: #333333;
+}
+
+body .content #side-img,
+html .content #side-img {
+  padding: 20px 20px 15px 0;
+  width: 25%;
+  height: 20%;
+  float: left;
+}
+
+body .content p:nth-of-type(1),
+html .content p:nth-of-type(1) {
+  padding: 20px 0 0 0;
+}
+
+body .content p:nth-last-of-type(1),
+html .content p:nth-last-of-type(1) {
+  padding: 0 0 20px 0;
+}
+
+body .content h3,
+html .content h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 200;
+  padding-top: 50px;
+}
+
+body .content h3 span,
+html .content h3 span {
+  font-weight: 600;
+}
+
+body .content h3::before,
+html .content h3::before {
+  width: 35%;
+  display: block;
+  content: "";
+  border-top: 1px solid grey;
+  -webkit-transform: translateY(-0.75rem);
+          transform: translateY(-0.75rem);
+  margin: 0 0 0 32.5%;
+}
+
+body .content h3::after,
+html .content h3::after {
+  width: 35%;
+  display: block;
+  content: "";
+  border-bottom: 1px solid grey;
+  -webkit-transform: translateY(0.75rem);
+          transform: translateY(0.75rem);
+  margin: 0 0 0 32.5%;
+}
+
+body footer,
+html footer {
+  background-color: white;
+  color: #333333;
+  text-align: center;
+}
+
+body footer p,
+html footer p {
+  margin: 0;
+  padding: 25px 0 25px 0;
+}
+
+body .sticky,
+html .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 1921px) {
+  body section:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  body .content:nth-of-type(2) {
+    margin-bottom: 150px;
+  }
+  body .content #side-img {
+    padding: 20px 20px 15px 0;
+    width: 30%;
+    height: 50%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body section .content:nth-of-type(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body section .content:nth-of-type(1) #side-img {
+    width: 100%;
+    padding-right: 0;
+  }
+  body section .content:nth-of-type(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 574px) {
+  body #carousel .carousel-item img {
+    height: 220px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
